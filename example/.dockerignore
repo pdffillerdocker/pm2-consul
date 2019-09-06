@@ -1,0 +1,9 @@
+node_modules
+.git
+.gitignore
+.env
+.dockerignore
+Dockerfile
+docker-compose.*
+README.md
+app_consul

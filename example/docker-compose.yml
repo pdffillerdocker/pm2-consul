@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  consul:
+    image: pdffiller/consul-standalone
+    ports:
+      - "8500:8500"
+    volumes:
+      - ./app_consul:/app_consul
+    env_file: docker-compose.env
+    command: /app_consul/app_kv.yml
+
+  app:
+    build: .
+    container_name: app
+    ports:
+      - "80:8080"
+    volumes:
+      - ./logs/pm2:/var/log/pm2
+      - ./logs/nodejs:/var/log/nodejs
+    env_file: docker-compose.env

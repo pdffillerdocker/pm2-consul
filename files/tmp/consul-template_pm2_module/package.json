@@ -1,0 +1,19 @@
+{
+  "name": "consul-template",
+  "version": "0.1.0",
+  "description": "PM2 Module running consul-template",
+  "apps": [
+    {
+      "name": "consul-template",
+      "script": "/usr/local/bin/exec_consul-template.sh",
+      "watch": ["/etc/consul"],
+      "interpreter": "bash",
+      "max_memory_restart": "32M",
+      "restart_delay": 100,
+      "max_restarts": 0,
+      "log_type": "json"
+    }
+  ],
+  "author": "trifonov.anton@pdffiller.team",
+  "license": "MIT"
+}

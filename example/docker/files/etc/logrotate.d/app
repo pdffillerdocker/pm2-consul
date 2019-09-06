@@ -1,0 +1,13 @@
+/var/log/nodejs/app.log {
+    daily
+    rotate 7
+    compress
+    delaycompress
+    missingok
+    dateext
+    extension .log
+    dateformat .%Y-%m-%d_%H-%M-%S
+    postrotate
+        /usr/local/bin/pm2 sendSignal SIGHUP app
+    endscript
+}

@@ -1,0 +1,29 @@
+%PM2_DEFAULT_LOG_PATH%/*.log {
+    daily
+    rotate 7
+    compress
+    delaycompress
+    missingok
+    dateext
+    extension .log
+    dateformat .%Y-%m-%d_%H-%M-%S
+    sharedscripts
+    postrotate
+        /usr/local/bin/pm2 reloadLogs
+    endscript
+}
+
+%PM2_DEFAULT_LOG_PATH%/*.json {
+    daily
+    rotate 7
+    compress
+    delaycompress
+    missingok
+    dateext
+    extension .json
+    dateformat .%Y-%m-%d_%H-%M-%S
+    sharedscripts
+    postrotate
+        /usr/local/bin/pm2 reloadLogs
+    endscript
+}

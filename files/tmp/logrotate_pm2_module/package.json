@@ -1,0 +1,19 @@
+{
+  "name": "logrotate",
+  "version": "0.1.0",
+  "description": "PM2 Module running logrotate every day",
+  "apps": [
+    {
+      "name": "logrotate",
+      "script": "/usr/local/bin/exec_logrotate.sh",
+      "watch": ["/etc/logrotate.d"],
+      "interpreter": "bash",
+      "autorestart": false,
+      "restart_delay": 10,
+      "cron_restart": "55 0 * * *",
+      "log_type": "json"
+    }
+  ],
+  "author": "trifonov.anton@pdffiller.team",
+  "license": "MIT"
+}
