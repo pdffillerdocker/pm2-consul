@@ -413,10 +413,12 @@ Also the concept of *"supported versions"* is used. Here "supported versions" ar
 Node.js for which new PM2-Consul Docker images will be built in case of PM2-Consul's `Dockerfile`
 and/or additional configs change. For now supported Node.js versions are:
 
-- 6.17.1
 - 8.16.1
+- 10.1.0
+- 10.12.0
+- 10.16.0
 - 10.16.3
-- 12.9.0
+- 12.8.1
 
 This list can be (and will be) changed with time.
 
@@ -448,8 +450,8 @@ When new significant changes occur in PM2-Consul's code (`Dockerfile`, configs, 
 images for all supported versions are built. If an image with an immutable tag already exists for
 specific Node.js version, newly built image is tagged with the next free tag with **`-N`** suffix,
 where N is a number, starting from 1. So images with `10.16.2` version of Node.js will have tags
-`10.16.2`, `10.16.2-1`, `10.16.2-2`, `10.16.2-3` and so on. And the `10.16.2-2` image is newer than
-`10.16.2-1`, and they both are newer than `10.16.2`.
+`10.16.3`, `10.16.3-1`, `10.16.3-2`, `10.16.3-3` and so on. And the `10.16.3-2` image is newer than
+`10.16.3-1`, and they both are newer than `10.16.3`.
 
 Simultaneously mutable tags are assigned the to most recent corresponding immutable tag. E.g.
 `10.16` tag chronologically points to `10.16.0`, `10.16.0-1`, `10.16.0-2`, `10.16.1`, `10.16.1-1`,
