@@ -38,7 +38,7 @@ var http = require('http');
 var server = http.createServer(function (request, response) {
   counter++;
   response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end(greeting + "\nRequests since last reload: " + counter + "\n");
+  response.end(greeting + "\nNode version: " + process.version + "\nRequests since last reload: " + counter + "\n");
   logger.info("requested " + request.url + " from " + request.connection.remoteAddress);
 });
 
