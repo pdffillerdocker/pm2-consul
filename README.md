@@ -416,9 +416,9 @@ and/or additional configs change. For now supported Node.js versions are:
 - 8.16.1
 - 10.1.0
 - 10.12.0
-- 10.16.0
 - 10.16.3
 - 12.8.1
+- 12.16.2
 
 This list can be (and will be) changed with time.
 
