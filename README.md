@@ -4,19 +4,28 @@
 [dockerfile-8.9.4]:     https://github.com/pdffillerdocker/pm2-consul/blob/028d4ec122533a00b5f62e9edd5f8e78ba2d4da4/Dockerfile
 [dockerfile-8.16.1]:    https://github.com/pdffillerdocker/pm2-consul/blob/f652793de341217f56c1a6b6864205898963e86b/Dockerfile
 [dockerfile-8.16.1-1]:  https://github.com/pdffillerdocker/pm2-consul/blob/e2757c3de6a19b7a67b105acb2fe18b71bd424ba/Dockerfile
+[dockerfile-8.16.1-2]:  https://github.com/pdffillerdocker/pm2-consul/blob/13447ee8d1b985940bb06c64f3fa32138f8c6f5f/Dockerfile
 [dockerfile-10.1.0]:    https://github.com/pdffillerdocker/pm2-consul/blob/00daf799b4eeaae79bfc0d98288a08c09e2d1419/Dockerfile
 [dockerfile-10.1.0-1]:  https://github.com/pdffillerdocker/pm2-consul/blob/bf00d7ea8a06fb03ab336444eb37419b0a8bf0c1/Dockerfile
+[dockerfile-10.1.0-2]:  https://github.com/pdffillerdocker/pm2-consul/blob/0e0bab2e48d013b5cd65e243ccf474aa7a82f35b/Dockerfile
 [dockerfile-10.12.0]:   https://github.com/pdffillerdocker/pm2-consul/blob/21f20c0915dc530087be8cfaa3d8c9f1ae749da4/Dockerfile
 [dockerfile-10.12.0-1]: https://github.com/pdffillerdocker/pm2-consul/blob/acedb95b157e0b0a82238655f8c9b93e75f38c97/Dockerfile
+[dockerfile-10.12.0-2]: https://github.com/pdffillerdocker/pm2-consul/blob/99dd664f40cb56450026a42b4c5d804925748800/Dockerfile
 [dockerfile-10.16.0]:   https://github.com/pdffillerdocker/pm2-consul/blob/4559b658c38462f0038929480d74937ac48df485/Dockerfile
 [dockerfile-10.16.0-1]: https://github.com/pdffillerdocker/pm2-consul/blob/b7aef2179f5754ad0a3369e3c2b63e8753f0f880/Dockerfile
 [dockerfile-10.16.3]:   https://github.com/pdffillerdocker/pm2-consul/blob/67c1333743bed9d10056fdcbecbc82f77730bebf/Dockerfile
 [dockerfile-10.16.3-1]: https://github.com/pdffillerdocker/pm2-consul/blob/4d113fa195f61608aff80e7a351f9aa0486b0e31/Dockerfile
+[dockerfile-10.16.3-2]: https://github.com/pdffillerdocker/pm2-consul/blob/d991284c8a17b69f0e2bc3096207eb4c4a3772a9/Dockerfile
+[dockerfile-10.21.0]:   https://github.com/pdffillerdocker/pm2-consul/blob/295bb610bf46966d886d32c902fb23ee13f3933b/Dockerfile
 [dockerfile-12.8.1]:    https://github.com/pdffillerdocker/pm2-consul/blob/f7ad3fe8ad436c3e7babea970ed60fa9812d5f27/Dockerfile
 [dockerfile-12.8.1-1]:  https://github.com/pdffillerdocker/pm2-consul/blob/5b204ea977f65750af3436e678eec6f0ea93c4f2/Dockerfile
+[dockerfile-12.8.1-2]:  https://github.com/pdffillerdocker/pm2-consul/blob/9aa50e1cc32be2f27d3dad23b144dfe1b2bdb4cc/Dockerfile
 [dockerfile-12.9.1]:    https://github.com/pdffillerdocker/pm2-consul/blob/15c0ccbe6b367c7a555e79322fbc5d7d1b005ce0/Dockerfile
 [dockerfile-12.10.0]:   https://github.com/pdffillerdocker/pm2-consul/blob/487fd81ef9cb3516e14d24a66c9339f042102d56/Dockerfile
 [dockerfile-12.16.2]:   https://github.com/pdffillerdocker/pm2-consul/blob/203ef5507bc4540dc5253870ae4dc80ee249089d/Dockerfile
+[dockerfile-12.16.2-1]: https://github.com/pdffillerdocker/pm2-consul/blob/537faac1f956d5a416904bed0e16ba9500b0c3f0/Dockerfile
+[dockerfile-12.18.2]:   https://github.com/pdffillerdocker/pm2-consul/blob/4866fec8cbc98c667506002eb08119b710699618/Dockerfile
+[dockerfile-14.5.0]:    https://github.com/pdffillerdocker/pm2-consul/blob/21117f079d636f8afd9c3f39503cd6d8fbd4a82e/Dockerfile
 
 ## <a name="tags-frozen"></a>Immutable (fixed, "frozen") tags
 
@@ -25,20 +34,29 @@ Tags that were once built and should not be rebuilt
 -	[`6.17.1`][dockerfile-6.17.1]
 -	[`8.9.4`][dockerfile-8.9.4],
 	[`8.16.1`][dockerfile-8.16.1],
-	[`8.16.1-1`][dockerfile-8.16.1-1]
+	[`8.16.1-1`][dockerfile-8.16.1-1],
+	[`8.16.1-2`][dockerfile-8.16.1-2]
 -	[`10.1.0`][dockerfile-10.1.0],
 	[`10.1.0-1`][dockerfile-10.1.0-1],
+	[`10.1.0-2`][dockerfile-10.1.0-2],
 	[`10.12.0`][dockerfile-10.12.0],
 	[`10.12.0-1`][dockerfile-10.12.0-1],
+	[`10.12.0-2`][dockerfile-10.12.0-2],
 	[`10.16.0`][dockerfile-10.16.0],
 	[`10.16.0-1`][dockerfile-10.16.0-1],
 	[`10.16.3`][dockerfile-10.16.3],
-	[`10.16.3-1`][dockerfile-10.16.3-1]
+	[`10.16.3-1`][dockerfile-10.16.3-1],
+	[`10.16.3-2`][dockerfile-10.16.3-2],
+	[`10.21.0`][dockerfile-10.21.0]
 -	[`12.8.1`][dockerfile-12.8.1],
 	[`12.8.1-1`][dockerfile-12.8.1-1],
+	[`12.8.1-2`][dockerfile-12.8.1-2],
 	[`12.9.1`][dockerfile-12.9.1],
 	[`12.10.0`][dockerfile-12.10.0],
-	[`12.16.2`][dockerfile-12.16.2]
+	[`12.16.2`][dockerfile-12.16.2],
+	[`12.16.2-1`][dockerfile-12.16.2-1],
+	[`12.18.2`][dockerfile-12.18.2]
+-	[`14.5.0`][dockerfile-14.5.0]
 
 
 ## <a name="tags-stable"></a>Mutable tags
@@ -47,14 +65,17 @@ Tags that can point to different images over time
 
 -	[`6.17`, `6`][dockerfile-6.17.1]
 -	[`8.9`][dockerfile-8.9.4],
-	[`8.16`, `8`][dockerfile-8.16.1-1]
--	[`10.1`][dockerfile-10.1.0-1],
-	[`10.12`][dockerfile-10.12.0-1],
-	[`10.16`, `10`][dockerfile-10.16.3-1]
--	[`12.8`][dockerfile-12.8.1-1],
+	[`8.16`, `8`][dockerfile-8.16.1-2]
+-	[`10.1`][dockerfile-10.1.0-2],
+	[`10.12`][dockerfile-10.12.0-2],
+	[`10.16`][dockerfile-10.16.3-2],
+	[`10.21`, `10`][dockerfile-10.21.0]
+-	[`12.8`][dockerfile-12.8.1-2],
 	[`12.9`][dockerfile-12.9.1],
 	[`12.10`][dockerfile-12.10.0],
-	[`12.16`, `12`, `latest`][dockerfile-12.16.2]
+	[`12.16`][dockerfile-12.16.2-1],
+	[`12.18`, `12`][dockerfile-12.18.2]
+-	[`14.5`, `14`, `latest`][dockerfile-14.5.0]
 
 
 ## <a name="tags-dev"></a>Development tags
