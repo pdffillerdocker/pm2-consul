@@ -45,9 +45,9 @@ RUN cd /tmp && \
         /var/log/nodejs \
     cd /tmp && \
     pm2 package consul-template_pm2_module && \
-    pm2 install /tmp/consul-template_pm2_module*.tar.gz && \
+    pm2 install --tarball /tmp/consul-template_pm2_module*.tar.gz && \
     pm2 package logrotate_pm2_module && \
-    pm2 install /tmp/logrotate_pm2_module*.tar.gz && \
+    pm2 install --tarball /tmp/logrotate_pm2_module*.tar.gz && \
     chmod +x \
         /usr/local/bin/consul-template \
         /usr/local/bin/exec_consul-template.sh \
