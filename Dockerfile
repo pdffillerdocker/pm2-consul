@@ -1,10 +1,10 @@
-ARG NODE_VERSION=12.16.2
+ARG NODE_VERSION=14.5.0
 FROM node:${NODE_VERSION}-alpine
 
 ARG BUILD_ID=0
 ARG VERSION=${NODE_VERSION}
-ARG CONSUL_TEMPLATE_VERSION=0.24.1
-ARG COMPONENTS_VERSION=1.0.1
+ARG CONSUL_TEMPLATE_VERSION=0.25.0
+ARG COMPONENTS_VERSION=1.0.2
 
 LABEL build_id="${BUILD_ID}" \
       version="${VERSION}" \
@@ -23,9 +23,11 @@ RUN apk --no-cache add \
 
 ARG PM2_HOME=/pm2
 ARG PM2_DEFAULT_LOG_PATH=/var/log/pm2
+ARG CONSUL_LOGLEVEL=info
 
 ENV PM2_HOME=${PM2_HOME} \
-    PM2_DEFAULT_LOG_PATH=${PM2_DEFAULT_LOG_PATH}
+    PM2_DEFAULT_LOG_PATH=${PM2_DEFAULT_LOG_PATH} \
+    CONSUL_LOGLEVEL=${CONSUL_LOGLEVEL}
 
 RUN npm install -g pm2 && \
     pm2 ls && \
@@ -43,9 +45,9 @@ RUN cd /tmp && \
         /var/log/nodejs \
     cd /tmp && \
     pm2 package consul-template_pm2_module && \
-    pm2 install /tmp/consul-template_pm2_module*.tar.gz && \
+    pm2 install --tarball /tmp/consul-template_pm2_module*.tar.gz && \
     pm2 package logrotate_pm2_module && \
-    pm2 install /tmp/logrotate_pm2_module*.tar.gz && \
+    pm2 install --tarball /tmp/logrotate_pm2_module*.tar.gz && \
     chmod +x \
         /usr/local/bin/consul-template \
         /usr/local/bin/exec_consul-template.sh \

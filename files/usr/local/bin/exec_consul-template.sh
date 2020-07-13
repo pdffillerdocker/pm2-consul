@@ -8,5 +8,5 @@ exec /usr/local/bin/consul-template \
        -consul-retry-attempts=0 \
        -consul-retry-backoff="250ms" \
        -consul-retry-max-backoff="1m" \
-       -log-level="trace" \
+       -log-level="${CONSUL_LOGLEVEL}" \
        -config="/etc/consul/consul.hcl"
