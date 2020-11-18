@@ -26,6 +26,7 @@
 [dockerfile-12.16.2-1]: https://github.com/pdffillerdocker/pm2-consul/blob/537faac1f956d5a416904bed0e16ba9500b0c3f0/Dockerfile
 [dockerfile-12.18.2]:   https://github.com/pdffillerdocker/pm2-consul/blob/4866fec8cbc98c667506002eb08119b710699618/Dockerfile
 [dockerfile-14.5.0]:    https://github.com/pdffillerdocker/pm2-consul/blob/21117f079d636f8afd9c3f39503cd6d8fbd4a82e/Dockerfile
+[dockerfile-14.15.1]:   https://github.com/pdffillerdocker/pm2-consul/blob/c05ae3bb7ef34734e08284a6ddcd52a94ef1138b/Dockerfile
 
 ## <a name="tags-frozen"></a>Immutable (fixed, "frozen") tags
 
@@ -56,7 +57,8 @@ Tags that were once built and should not be rebuilt
 	[`12.16.2`][dockerfile-12.16.2],
 	[`12.16.2-1`][dockerfile-12.16.2-1],
 	[`12.18.2`][dockerfile-12.18.2]
--	[`14.5.0`][dockerfile-14.5.0]
+-	[`14.5.0`][dockerfile-14.5.0],
+	[`14.15.1`][dockerfile-14.15.1]
 
 
 ## <a name="tags-stable"></a>Mutable tags
@@ -75,7 +77,8 @@ Tags that can point to different images over time
 	[`12.10`][dockerfile-12.10.0],
 	[`12.16`][dockerfile-12.16.2-1],
 	[`12.18`, `12`][dockerfile-12.18.2]
--	[`14.5`, `14`, `latest`][dockerfile-14.5.0]
+-	[`14.5`][dockerfile-14.5.0],
+	[`14.15`, `14`, `latest`][dockerfile-14.15.1]
 
 
 ## <a name="tags-dev"></a>Development tags
